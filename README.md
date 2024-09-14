@@ -19,7 +19,7 @@ A simple react TODO App with signUp and Login
 # SetUp the project 
 
 1. Clone the Repository.
-git clone https://github.com/Nethmi-Randi/todo-app-with-registration.git
+git clone https://github.com/Nethmi-Randi/ToDo-App.git
 
 2. go to directory 
 cd  todo_app
