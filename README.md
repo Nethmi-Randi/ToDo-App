@@ -16,10 +16,6 @@ A simple react TODO App with signUp and Login
 - Used local storage functionality to persist ToDo across page reloads 
 - Routing between different pages via React Router
 
-![SignUp](../todo_app/src/assets/signUp.png)
-![Login](../todo_app/src/assets/login.png)
-![ToDo](../todo_app/src/assets/todo.png)
-
 # SetUp the project 
 
 1. Clone the Repository.
