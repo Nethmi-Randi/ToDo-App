@@ -15,7 +15,8 @@ A simple react TODO App with signUp and Login
 - Responsive for desktop and mobile devices 
 - Used local storage functionality to persist ToDo across page reloads 
 - Routing between different pages via React Router
--( copies of the user interfaces are added to the assets folder)
+-( copies of the user interfaces are added to the assets folder) 
+
 
 # SetUp the project 
 
