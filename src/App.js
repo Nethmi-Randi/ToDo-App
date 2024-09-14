@@ -1,25 +1,47 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'; 
+import Register from "./Components/Register/Register"; 
+import Login from "./Components/Login/Login";
+import ToDoList from "./Components/ToDoList/ToDoList";
 import './App.css';
 
-function App() {
+const App = () => {
+  const [registeredUser, setRegisteredUser] = useState(null);
+
+  const handleRegister = (user) => {
+    setRegisteredUser(user);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        
+        <Route
+          path="/"
+          element={registeredUser ? <Navigate to="/login" /> : <Register onRegister={handleRegister} />}
+        />
+        
+        <Route
+          path="/login"
+          element={registeredUser ? <Login registeredUser={registeredUser} /> : <Navigate to="/" replace/>}
+        />
+ 
+        <Route
+          path="/todo"
+          element={registeredUser ? <ToDoList /> : <Navigate to="/login" replace />}
+        />
+
+      {/* Access the ToDo component only  */}
+        <Route
+          path="/todos"
+          element={<ToDoList />}
+        />
+
+        </Routes>
+    </Router>
+    
   );
-}
+};
 
 export default App;
+

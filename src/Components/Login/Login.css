@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #c1acf1;  
+}
+
+.login-container {
+    background-color: #23035f; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    width: 30%;
+    height: 270px;
+    margin-left: 400px;
+    margin-top: 120px;  
+  }
+  
+  .login-heading {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #ffffff;
+  }
+  
+  .login-form-group {
+    margin-bottom: 20px;
+  }
+  
+  .login-form-input {
+    width: 300px;
+    margin-left: 15px;
+    padding: 12px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .login-form-input:focus {
+    border: 2px solid #6a11cb;
+    outline: none;
+  }
+  
+  .login-button {
+    background-color: #28a745; 
+    padding: 12px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: fixed;
+    left:730px;
+    top:380px
+  }
+  
+  .register-button:hover {
+    background-color: #218838;
+  }
+  
+  .checkbox-group {
+    margin-top: 10px;
+  }
+  
+  .checkbox-group input {
+    margin-right: 10px;
+  }
+  
+  .checkbox-group label {
+    font-size: 14px;
+  }
+
+  .error-message{
+    font-size: 13px;
+    color:coral;
+  }
+  .login-message{
+    font-size: 13px;
+    color:coral;
+    top:400px;
+    left:500px
+  }
+
+  @media (max-width: 768px) {
+    .login-container {
+      width: 40%; 
+      padding: 20px;
+      margin: 40px auto;
+    }
+  
+    .login-heading {
+      font-size: 22px;
+    }
+  
+    .login-form-input {
+      padding: 10px;
+      font-size: 14px;
+      width:80%;
+    }
+  
+    .login-button {
+      font-size: 14px;
+      padding: 10px;
+      left:290px;
+      top:280px
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .login-container {
+      width: 80%;
+      padding: 10px;
+      margin: 20px ;
+    }
+  
+    .login-heading {
+      font-size: 20px;
+    }
+  
+    .login-form-input {
+      padding: 8px;
+      width:80%;
+      font-size: 12px;
+    }
+  
+    .login-button {
+      font-size: 12px;
+      padding: 8px;
+      position: relative;
+      left:20px;
+      top:10px
+    }
+  }
+
+  
